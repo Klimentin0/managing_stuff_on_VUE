@@ -22,7 +22,7 @@ let showModal = ref(false);
 
   <TeamFooter  />
 
-  <Modal :show="showModal" @close="showModal = flase">
+  <Modal :show="showModal" @close="showModal = false">
     <template #default>
       <p>new member</p>
       <form class="mt-6">
