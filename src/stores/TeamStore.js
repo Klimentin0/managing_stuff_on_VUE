@@ -10,11 +10,11 @@ export let useTeamStore = defineStore('team', {
   },
 
   actions: {
-    fill() {
-      import('@/team.json').then(r => {
+    async fill() {
+      let r = await import('@/team.json');
 
         this.$state = r.default;
-      });
+
     }
   }
 });
